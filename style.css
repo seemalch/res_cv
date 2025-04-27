@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #212A3E;
+  color: #e6e6e6;
+}
+
+.navbar {
+  background-color: #3F51B5;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s;
+  font-weight: 500; 
+}
+
+.nav-link:hover {
+  color: #FBBF24 !important;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+#home {
+  background: #212A3E;
+  color: #e6e6e6;
+}
+
+.profile-img {
+  width:  250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #3F51B5;
+}
+
+h1, h3 {
+  color: #FBBF24;
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.typed-text {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.btn-custom {
+  background-color: #3F51B5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #3F51B5;
+  color: #FBBF24;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 80px 0;
+}
+
+section#about h2, section#experience h2, section#contact h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+section#skills h2, section#projects h2 {
+  color: #3F51B5;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h4 {
+  color: #3F51B5;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.skill-bar span {
+  display: block;
+  margin-bottom: 5px;
+  color: #212A3E;
+}
+
+.progress {
+  background-color: #212A3E;
+  height: 10px;
+}
+
+.progress-bar.bg-custom {
+  background-color: #FBBF24;
+}
+
+.card {
+  background-color: #fff;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #3F51B5;
+  font-size: 1 rem;
+  font-weight: 550;
+  text-align: center;
+}
+
+footer {
+  background-color: #212A3E;
+}

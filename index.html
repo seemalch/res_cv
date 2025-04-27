@@ -8,10 +8,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- AOS CSS for animations -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Splash Screen -->
+  <div id="splash-screen" class="splash-screen">
+    <div class="splash-content">
+      <h1>Seemal Zia</h1>
+      <p>Loading Portfolio...</p>
+    </div>
+  </div>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
@@ -23,26 +33,40 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
- <!-- Home Section -->
- <section id="home" class="d-flex align-items-center min-vh-100 text-center">
-  <div class="container">
-    <img src="images/up.jpg" alt="Profile Picture" class="profile-img rounded-circle mb-4" data-aos="zoom-in">    <h1 data-aos="fade-up">Hi, I'm Seemal Zia</h1>
-    <h3 data-aos="fade-up" data-aos-delay="200">I'm a <span class="typed-text"></span></h3>
-    <div class="mt-4">
-      <a href="#contact" class="btn btn-custom me-3" data-aos="fade-up" data-aos-delay="400">Get In Touch</a>
-      <a href="path/to/your/resume.pdf" class="btn btn-custom" data-aos="fade-up" data-aos-delay="500" download>Download CV</a>
+  <!-- Home Section with Floating Tech Icons -->
+  <section id="home" class="d-flex align-items-center min-vh-100 text-center position-relative">
+    <div class="tech-icons-container position-absolute top-0 start-0 w-100 h-100">
+      <i class="fas fa-code tech-icon" style="font-size: 2rem; left: 10%; top: 20%; animation-duration: 15s;"></i>
+      <i class="fas fa-cogs tech-icon" style="font-size: 1.5rem; left: 20%; top: 60%; animation-duration: 20s;"></i>
+      <i class="fas fa-database tech-icon" style="font-size: 2rem; left: 30%; top: 40%; animation-duration: 18s;"></i>
+      <i class="fas fa-laptop-code tech-icon" style="font-size: 1.8rem; left: 50%; top: 70%; animation-duration: 22s;"></i>
+      <i class="fas fa-brain tech-icon" style="font-size: 1.6rem; left: 70%; top: 30%; animation-duration: 17s;"></i>
+      <i class="fas fa-paint-brush tech-icon" style="font-size: 1.7rem; left: 80%; top: 50%; animation-duration: 19s;"></i>
+      <i class="fas fa-server tech-icon" style="font-size: 1.9rem; left: 40%; top: 80%; animation-duration: 21s;"></i>
+      <i class="fas fa-terminal tech-icon" style="font-size: 1.5rem; left: 60%; top: 10%; animation-duration: 16s;"></i>
     </div>
-  </div>
-</section>
+    <div class="container position-relative">
+      <img src="images/up.jpg" alt="Profile Picture" class="profile-img rounded-circle mb-4" data-aos="zoom-in">
+      <h1 data-aos="fade-up">Hi, I'm Seemal Zia</h1>
+      <h3 data-aos="fade-up" data-aos-delay="200">I'm a <span class="typed-text"></span></h3>
+      <div class="mt-4">
+        <a href="#contact" class="btn btn-custom me-3" data-aos="fade-up" data-aos-delay="400">Get In Touch</a>
+        <a href="resume.pdf" class="btn btn-custom" data-aos="fade-up" data-aos-delay="500" download>Download CV</a>
+      </div>
+    </div>
+  </section>
 
   <!-- About Section -->
   <section id="about" class="py-5">
@@ -54,9 +78,28 @@
         </div>
         <div class="col-md-8" data-aos="fade-left">
           <p>I am a passionate MERN Stack Developer with over a year of experience in building scalable, high-performance web applications and along with innovative AI solutions. I specialize in MongoDB, Express.js, React, and Node.js, with a strong focus on clean, efficient, and maintainable code. Additionally, I have expertise in UI/UX design, creating intuitive interfaces, and leveraging AI/ML technologies like LLMs and Generative AI to develop impactful applications.</p>
-          <p>BSCS in Computer Science at FAST National University, I have worked on projects ranging from community management platforms to AI-driven poetry generation and secure authentication systems. I’m also an active member of the FAST Photography Society, where I’ve led multimedia coverage for major events.</p>
+          <p>I’m also an active member of the FAST Photography Society, where I’ve led multimedia coverage for major events.</p>
         </div>
-      </div>  
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Education</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3" data-aos="fade-up">
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h4>BS in Computer Science, CGPA (2.83/4.00)</h4>
+              <p class="text-muted">FAST National University, Pakistan</p>
+              <p class="text-muted">2021 - 2025</p>
+              <p>Graduated with a focus on Software Development, AI/ML, GenAI. Participated in various tech societies and led projects in Web Development and AI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -121,6 +164,7 @@
     </div>
   </section>
 
+
   <!-- Experience Section -->
   <section id="experience" class="py-5">
     <div class="container">
@@ -156,6 +200,8 @@
       </div>
     </div>
   </section>
+
+
 
   <!-- Projects Section -->
   <section id="projects" class="py-5 bg-light">
@@ -218,6 +264,82 @@
     </div>
   </section>
 
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Achievements</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">MERN Stack Certification</h5>
+              <p class="text-muted">Udemy, 2024</p>
+              <p>Completed a comprehensive course on MERN stack development, mastering MongoDB, Express.js, React, and Node.js.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">AI/ML Fundamentals</h5>
+              <p class="text-muted">Coursera, 2024</p>
+              <p>Earned a certificate in AI/ML fundamentals, focusing on LLMs and Generative AI.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card shadow mb-4">
+            <div class="card-body text-center">
+              <h5 class="card-title">FAST Photography Society Lead</h5>
+              <p class="text-muted">2022-2025</p>
+              <p>Led multimedia coverage for major university events, earning recognition for creativity and leadership.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up" style="color: white;">Blog</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Building a Secure Future: Introducing the Advanced Authentication System</h5>
+              <p class="text-muted">Published on Medium</p>
+              <p class="card-text">Advanced Authentication System is a full-stack authentication solution built with the MERN stack (MongoDB, Express.js, React, and Node.js). </p>
+              <a href="https://medium.com/@seemalch5/building-a-secure-future-introducing-the-advanced-authentication-system-506fc8cd76e9" class="btn btn-custom">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Bazm-e-Shayari: Crafting Roman Urdu Poetry with AI</h5>
+              <p class="text-muted">Published on Medium</p>
+              <p class="card-text">Training an LSTM model on a dataset of Urdu poetry, to create an AI that could not just generate random words but write Nazms with rhythm and depth.</p>
+              <a href="https://medium.com/@seemalch5/bazm-e-shayari-crafting-roman-urdu-poetry-with-ai-c2fba6430560" class="btn btn-custom">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card shadow mb-4">
+            <div class="card-body">
+              <h5 class="card-title">UI/UX Trendy Design Tips for Developers Using Figma Tool</h5>
+              <p class="text-muted">Published on Medium</p>
+              <p class="card-text">Top tips for creating intuitive and visually appealing user interfaces using Figma, a best practice for creating trendy designs and timelines.</p>
+              <a href="https://medium.com/@seemalch5/ui-ux-design-tips" class="btn btn-custom">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="py-5">
     <div class="container">
@@ -237,8 +359,11 @@
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Seemal Zia. All Rights Reserved.</p>
+    <p>© 2025 Seemal Zia. All Rights Reserved.</p>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="btn btn-primary back-to-top"><i class="fas fa-arrow-up"></i></button>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

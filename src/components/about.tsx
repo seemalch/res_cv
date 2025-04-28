@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { getImagePath } from '../lib/path-utils.js';
 export default function About() {
     return (
       <section id="about" className="bg-navy-light py-20">
@@ -61,13 +61,9 @@ export default function About() {
   
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative w-64 h-64 md:w-80 md:h-80">
-                <Image
-        src="/up.jpg"
-        alt="Placeholder"
-        width={500} 
+              <img src={getImagePath('up.jpg') || "/up.jpg"} alt="Placeholder" width={500} 
         height={500} 
-        className="rounded-full w-full h-full object-cover"
-          />
+        className="rounded-full w-full h-full object-cover" />
               </div>
             </div>
           </div>

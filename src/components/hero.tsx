@@ -50,7 +50,7 @@ export default function Hero() {
                 <GitHub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/seemal-zia"
+                href="https://www.linkedin.com/in/seemal-zia-00250421a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text hover:text-yellow transition-colors duration-300"

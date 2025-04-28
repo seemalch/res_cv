@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ExternalLink, Github, ArrowRight } from 'lucide-react'
-import Image from "next/image";
+import { getImagePath } from '../lib/path-utils.js'
 
 const projects = [
   {
@@ -100,13 +100,12 @@ export default function Projects() {
               className="bg-navy-light rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               <div className="relative overflow-hidden h-48">
-  <Image
-    src={project.image || "/placeholder.svg"} // Use /placeholder.svg for public/ assets
-    alt={project.title}
-    fill // Use fill to match w-full h-full
-    className="object-cover transition-transform duration-500 hover:scale-110"
-  />
-</div>
+                <img
+                  src={getImagePath(project.image) || getImagePath("/placeholder.svg")}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </div>
 
               <div className="p-6 flex-grow">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>

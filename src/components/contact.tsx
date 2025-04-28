@@ -20,7 +20,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // In a real implementation, you would send the form data to your backend or email service
     console.log("Form submitted:", formData)
     alert("Thank you for your message! I will get back to you soon.")
     setFormData({
@@ -82,7 +81,7 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/seemal-zia"
+                href="https://www.linkedin.com/in/seemal-zia-00250421a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-navy text-text hover:text-yellow p-3 rounded-full transition-colors duration-300"

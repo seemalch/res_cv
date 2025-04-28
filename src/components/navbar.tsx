@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from 'lucide-react'
+import { getImagePath } from '../lib/path-utils.js';
 
 
 const navLinks = [
@@ -48,8 +49,8 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <a href="/SeemalZia_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline">
-              Resume
+            <a href={getImagePath('/SeemalZia_Resume.pdf')} target="_blank" rel="noopener noreferrer" className="btn-outline">
+             Resume
             </a>
           </nav>
 
@@ -75,7 +76,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="/SeemalZia_Resume.pdf"
+              href={getImagePath('/SeemalZia_Resume.pdf')}
               target="_blank"
               rel="noopener noreferrer"
               className="block px-3 py-2 rounded-md text-base font-medium text-yellow"

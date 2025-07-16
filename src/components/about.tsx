@@ -51,7 +51,7 @@ export default function About() {
                     <br />
                     FAST National University 
                     <br />
-                    CGPA : 2.83/4.00
+                    CGPA : 2.85/4.00
                     <br />              
                     Sep 2021 – Jun 2025
                   </p>

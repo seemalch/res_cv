@@ -12,9 +12,9 @@ export default function About() {
               </h3>
   
               <p className="text-text-secondary mb-6">
-                I am a passionate MERN Stack Developer with 1+ years of hands-on industry experience in building scalable,
-                high-performance web applications using MongoDB, Express.js, React, and Node.js. I am skilled in writing
-                clean, efficient, and maintainable code, with a strong understanding of fullstack development.
+                I am a passionate Full Stack Developer with 1+ years of hands-on industry experience in building scalable,
+                high-performance web applications. I am skilled in writing clean,efficient and maintainable code, 
+                with a strong understanding of frontend,backend and databases.
               </p>
   
               <p className="text-text-secondary mb-6">
@@ -49,10 +49,7 @@ export default function About() {
                   <p className="text-text-secondary">
                     <span className="text-yellow">B.S. Computer Science</span>
                     <br />
-                    FAST National University 
-                    <br />
-                    CGPA : 2.85/4.00
-                    <br />              
+                    FAST National University             
                     Sep 2021 – Jun 2025
                   </p>
                 </div>

@@ -50,8 +50,7 @@ export default function About() {
                     <span className="text-yellow">B.S. Computer Science</span>
                     <br />
                     FAST National University
-                      <br> </br>
-                    Sep 2021 – Jun 2025
+                      <br> Sep 2021 – Jun 2025 </br>
                   </p>
                 </div>
               </div>
